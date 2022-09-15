@@ -1,10 +1,10 @@
 {
-  "name": "vitesse-webext",
-  "displayName": "Vitesse WebExt",
+  "name": "browser-sync",
+  "displayName": "Browser Sync",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.8.0",
-  "description": "[description]",
+  "description": "同步您的书签、标签页和历史记录",
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
     "dev:prepare": "esno scripts/prepare.ts",
@@ -58,5 +58,9 @@
     "web-ext": "^7.2.0",
     "webext-bridge": "^5.0.5",
     "webextension-polyfill": "^0.10.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "webext-options-sync": "^4.0.0"
   }
 }
